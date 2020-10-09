@@ -1,0 +1,42 @@
+.row{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.row__posters {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row__poster {
+    object-fit: contain;
+    max-height: 250px;
+    margin-right: 30px;
+    transition: transform 450ms;
+}
+.movie__container {
+    margin: 2.5rem;
+}
+.row__poster:hover {
+    transform: scale(1.09);
+}
+.more__info {
+    align-items: center;
+}
+.judul__poster{
+    position: absolute;
+    width: 135px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.more__info span {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 140px;
+}
