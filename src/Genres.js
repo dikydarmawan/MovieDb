@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from "./axios";
 import './Genres.css';
+import { Link } from '@reach/router';
 
-function Genres({genre, fetchUrl}) {
+function Genres({genre, fetchUrl}, index) {
     const [genres, setGenres] = useState([]);
 
     useEffect(() => {
@@ -20,7 +21,9 @@ function Genres({genre, fetchUrl}) {
             <div className='genre__list'>
                 {genres.map((genre, index) => (
                  <ul className='genre__ul' key={index}>
+                     <Link to={`/${genre.id}`}>
                      <button className="btn-list" type='button'>{genre.name}</button>
+                     </Link>
                  </ul>
                 )
                 

@@ -6,8 +6,7 @@
     color: var(--i)
 }
 .p2 {
-    color: var(--i)
-}
+    color: --i;}
 .p3 {
     color: var(--i)
 }

@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import About from './pages/About';
-// import Home from './pages/Home';
 import './Nav.css';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
 import { Avatar } from "@material-ui/core";
 import SearchBar from './SearchBar';
-import { Link } from '@reach/router';
-import Logo from './assets/logo.png';
-
+// import axios from './axios';
+// import Row from './Row';
 
 // const search_api = 
 //     "https://api.themoviedb.org/3/search/movie?&api_key=18f6e9943fc4b4d799ed4b458576533f&query=";
@@ -64,11 +55,9 @@ function Nav() {
         </ul>
         </Router> */}
         <div className="nav__left"> 
-        <Link to="/">
-        <img className="logo" src={Logo} alt="logo"/>
-        </Link>
+        <h1> My Movie List</h1>
         </div>
-        <div > 
+        <div className="nav__search"> 
         <SearchBar />
         </div>
         <div className="nav__right"> 
