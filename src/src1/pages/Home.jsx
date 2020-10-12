@@ -33,7 +33,7 @@ export default class Home extends Component {
             <Nav />
             <Router>
                 <App path="/" />
-                <Movie path="/details/:movieId" />
+                <Movie path="/detail:movieId" />
                 <GenresRow path="/:genreId" />
                                 
                 <NotFound default />
